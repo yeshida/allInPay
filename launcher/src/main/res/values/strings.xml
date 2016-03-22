@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">通联Launcher</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_input_mem_no">请输入会员号</string>
+    <string name="hint_input_oper_no">请输入操作员号</string>
+    <string name="hint_input_passwd">请输入密码</string>
+</resources>

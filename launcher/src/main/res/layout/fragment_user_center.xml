@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/user_center_input_area_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0066ff"
+                android:padding="10dp"
+                android:src="@drawable/pic_gh"/>
+
+            <EditText
+                android:id="@+id/oper_name_edit"
+                style="@style/CommonEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:inputType="textVisiblePassword"
+                android:maxLength="20"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/user_center_input_area_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_center_vertical_item_spacing"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0066ff"
+                android:padding="10dp"
+                android:src="@drawable/pic_sjh"/>
+
+            <EditText
+                android:id="@+id/oper_phone_edit"
+                style="@style/CommonEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:inputType="number"
+                android:maxLength="11"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/user_center_input_area_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_center_vertical_item_spacing"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0066ff"
+                android:padding="10dp"
+                android:src="@drawable/pic_qx"/>
+
+            <EditText
+                android:id="@+id/oper_type_show"
+                style="@style/CommonEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#a9a9a9"
+                android:background="@android:color/white"
+                android:editable="false"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confirm_btn"
+            style="@style/BaseText"
+            android:layout_marginTop="@dimen/user_center_vertical_item_spacing"
+            android:background="@drawable/selector_btn01"
+            android:text="确定"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

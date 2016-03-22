@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#282828"
+        android:textSize="@dimen/font_small"/>
+
+    <Button
+        android:id="@+id/connect_entry_btn"
+        style="@style/DialogDebugButton"
+        android:background="@drawable/common_negative_btn_bg"
+        android:text="通讯设置"
+        android:textColor="@color/common_negative_btn_text"/>
+
+    <Button
+        android:id="@+id/setup_entry_btn"
+        style="@style/DialogDebugButton"
+        android:background="@drawable/common_negative_btn_bg"
+        android:text="网络设置"
+        android:textColor="@color/common_negative_btn_text"/>
+
+    <Button
+        android:id="@+id/gtms_entry_btn"
+        style="@style/DialogDebugButton"
+        android:background="@drawable/common_negative_btn_bg"
+        android:text="GTMS"
+        android:textColor="@color/common_negative_btn_text"/>
+
+</LinearLayout>

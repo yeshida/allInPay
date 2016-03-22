@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/main_title_area_height"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/main_title_area_horizontal_padding"
+              android:paddingRight="@dimen/main_title_area_horizontal_padding">
+
+
+    <TextView
+        style="@style/BaseText"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:text="通联智管家"
+        android:textSize="@dimen/font_large"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/user_name_show"
+        style="@style/BaseText"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:drawablePadding="@dimen/main_user_name_drawable_padding"
+        android:drawableRight="@drawable/pic_default_photo"
+        android:gravity="center_vertical|right"
+        android:textSize="@dimen/font_small"/>
+
+</LinearLayout>

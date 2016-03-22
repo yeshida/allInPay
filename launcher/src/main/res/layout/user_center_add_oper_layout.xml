@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!--用户名-->
+        <LinearLayout
+            android:layout_width="@dimen/user_center_input_area_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0066ff"
+                android:padding="10dp"
+                android:src="@drawable/pic_gh"/>
+
+            <EditText
+                android:id="@+id/oper_name_edit"
+                style="@style/CommonEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="请输入用户名"
+                android:inputType="textVisiblePassword"
+                android:maxLength="20"/>
+        </LinearLayout>
+
+        <!--操作员号-->
+        <LinearLayout
+            android:layout_width="@dimen/user_center_input_area_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_center_vertical_item_spacing"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0066ff"
+                android:padding="10dp"
+                android:src="@drawable/pic_gh"/>
+
+            <EditText
+                android:id="@+id/oper_id_edit"
+                style="@style/CommonEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="请输入操作员号"
+                android:inputType="number"
+                android:maxLength="2"/>
+        </LinearLayout>
+
+        <!--手机号-->
+        <LinearLayout
+            android:layout_width="@dimen/user_center_input_area_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_center_vertical_item_spacing"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0066ff"
+                android:padding="10dp"
+                android:src="@drawable/pic_sjh"/>
+
+            <EditText
+                android:id="@+id/oper_phone_edit"
+                style="@style/CommonEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:maxLength="11"/>
+        </LinearLayout>
+
+        <!--操作员类型-->
+        <RadioGroup
+            android:id="@+id/oper_type_chooser"
+            android:layout_width="@dimen/user_center_input_area_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_center_vertical_item_spacing"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <RadioButton
+                android:id="@+id/manager_tab"
+                style="@style/BaseText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_oper_type_tab_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="管理员"
+                android:textColor="@color/selector_user_type_tab_text"/>
+
+            <RadioButton
+                android:id="@+id/oper_tab"
+                style="@style/BaseText"
+                android:layout_width="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_oper_type_tab_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="普通用户"
+                android:textColor="@color/selector_user_type_tab_text"/>
+        </RadioGroup>
+
+        <!--设置密码-->
+        <LinearLayout
+            android:layout_width="@dimen/user_center_input_area_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_center_vertical_item_spacing"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0066ff"
+                android:padding="10dp"
+                android:src="@drawable/pic_jmm"/>
+
+            <EditText
+                android:id="@+id/passwd_edit"
+                style="@style/CommonEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="请设置密码"
+                android:inputType="textPassword"
+                android:maxLength="20"/>
+
+            <ImageButton
+                android:id="@+id/see_pwd_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:src="@drawable/selector_see_btn"/>
+
+        </LinearLayout>
+
+        <!--再次输入密码-->
+        <LinearLayout
+            android:layout_width="@dimen/user_center_input_area_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_center_vertical_item_spacing"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0066ff"
+                android:padding="10dp"
+                android:src="@drawable/pic_jmm"/>
+
+            <EditText
+                android:id="@+id/passwd_again_edit"
+                style="@style/CommonEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="请再次输入密码"
+                android:inputType="textPassword"
+                android:maxLength="20"/>
+
+            <ImageButton
+                android:id="@+id/see_pwd_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:src="@drawable/selector_see_btn"/>
+
+        </LinearLayout>
+
+        <!--取消或者确定按钮-->
+        <LinearLayout
+            android:layout_width="@dimen/user_center_input_area_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_center_vertical_item_spacing"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <Button
+                android:id="@+id/cancel_btn"
+                style="@style/BaseText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn03"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="取消"/>
+
+            <Button
+                android:id="@+id/confirm_btn"
+                style="@style/BaseText"
+                android:layout_width="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn02"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="确定"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

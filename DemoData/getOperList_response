@@ -1,0 +1,34 @@
+{
+  "TransCode": "T00054",
+  "TransTime": "20160310175250",
+  "Opers": [
+    {
+      "OperPhoneNo": "18759181505",
+      "OperSt": "1",
+      "OperName": "01",
+      "OperType": "01",
+      "OperID": "00"
+    },
+    {
+      "OperPhoneNo": "13960854444",
+      "OperSt": "1",
+      "OperName": "02",
+      "OperType": "02",
+      "OperID": "01"
+    },
+    {
+      "OperPhoneNo": "",
+      "OperSt": "1",
+      "OperName": "linianjian",
+      "OperType": "01",
+      "OperID": "99"
+    }
+  ],
+  "PsamID": "AIP0000000000001",
+  "RetMsg": "获取列表成功",
+  "TerminalID": "D1G0280000003",
+  "RetCode": "00",
+  "totalNumber": 3,
+  "Series": "357009",
+  "PinpadID": "AIP0000000000001"
+}

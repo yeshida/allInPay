@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#004098">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/selector_back_btn"/>
+
+
+        <TextView
+            android:id="@+id/title_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人中心"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_large"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/add_oper_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/selector_add_oper_btn"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/repeat_bg">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2f2f2f"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/user_center_btn"
+                style="@style/UserCenterTabButton"
+                android:drawableTop="@drawable/selector_user_center_btn"
+                android:text="个人中心"/>
+
+            <View
+                android:layout_width="@dimen/common_divider_size"
+                android:layout_height="match_parent"
+                android:background="#666666"/>
+
+
+            <RadioButton
+                android:id="@+id/modify_pwd_btn"
+                style="@style/UserCenterTabButton"
+                android:drawableTop="@drawable/selector_modify_pwd_btn"
+                android:text="修改密码"/>
+
+            <View
+                android:layout_width="@dimen/common_divider_size"
+                android:layout_height="match_parent"
+                android:background="#666666"/>
+
+            <RadioButton
+                android:id="@+id/oper_manag_btn"
+                style="@style/UserCenterTabButton"
+                android:drawableTop="@drawable/selector_oper_manager_btn"
+                android:text="操作员管理"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

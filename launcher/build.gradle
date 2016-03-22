@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    signingConfigs {
+        debug {
+            storeFile file("F:\\升腾\\项目\\allinpay\\debug.keystore")
+        }
+    }
+    defaultConfig {
+        applicationId "com.centerm.allinpay.launcher"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile files('libs/universal-image-loader-1.9.4-with-sources.jar')
+    compile files('libs/android-async-httpclient-1.4.8-with-sources.jar')
+    compile files('libs/httpcore-4.4.1.jar')
+    compile files('libs/httpclient-4.5.jar')
+    compile files('libs/httpmime-4.5.jar')
+    compile files('libs/android-async-httpclient-1.4.8test.jar')
+}

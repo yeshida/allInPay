@@ -1,0 +1,18 @@
+{
+  "TransCode": "T00052",
+  "TerminalID": "D1G0280000003",
+  "PinpadID": "AIP0000000000001",
+  "PsamID": "AIP0000000000001",
+  "Series": "478863",
+  "TransTime": "20160311105308",
+  "UserID": "13544555503",
+  "OperID": "99",
+  "PassWord": "04B9C2A66C27B7D2357A80D3BA3BA417",
+  "NewOperID": "88",
+  "NewPassWord": "E10ADC3949BA59ABBE56E057F20F883E",
+  "NewOperName": "ghghhg",
+  "NewOperPhoneNo": "13107606155",
+  "OperType": "02",
+  "KeyFlag": "01",
+  "MAC": "1234567898765432"
+}
